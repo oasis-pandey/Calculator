@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator </title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/f2745b7ba6.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+        <input id="display" placeholder="0">
+        <div class="buttons">
+            <button onclick="appendToDisplay('&lpar;')">&lpar;</button>
+            <button onclick="appendToDisplay('&rpar;')">&rpar;</button>
+            <button onclick="correct()"><i class="fa-solid fa-delete-left"></i></button>
+            <button onclick="appendToDisplay('-')"><i class="fa-solid fa-minus"></i></button>
+            <button onclick="appendToDisplay('7')">7</button>
+            <button onclick="appendToDisplay('8')">8</button>
+            <button onclick="appendToDisplay('9')">9</button>
+            <button onclick="appendToDisplay('*')"><i class="fa-solid fa-xmark"></i></button>
+            <button onclick="appendToDisplay('4')">4</button>
+            <button onclick="appendToDisplay('5')">5</button>
+            <button onclick="appendToDisplay('6')">6</button>
+            <button onclick="appendToDisplay('/')"><i class="fa-solid fa-divide"></i></button>
+            <button onclick="appendToDisplay('1')">1</button>
+            <button onclick="appendToDisplay('2')">2</button>
+            <button onclick="appendToDisplay('3')">3</button>
+            <button onclick="appendToDisplay('+')"><i class="fa-solid fa-plus"></i></button>
+            <button onclick="appendToDisplay('0')">0</button>
+            <button onclick="appendToDisplay('.')">.</button>
+            <button onclick="clearDisplay()">AC</button>
+            <button class="equalBtn" onclick="calculate()"><i class="fa-solid fa-equals"></i></button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+   
+</body>
+
+</html>
